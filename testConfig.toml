@@ -1,0 +1,22 @@
+
+# Reserved keywords: ALL (url read access to everything)
+[groups]
+[groups.COMPANY1]
+location="/wiki/company"
+
+[groups.COMPANY2]
+location="/wiki/company2"
+
+
+[users]
+[users.exampleuser]
+group=["COMPANY1"]
+password="password"
+
+[users.exampleuser2]
+group=["COMPANY2","COMPANY1"]
+password="password"
+
+[users.exampleuser3]
+group=["ALL"]
+password="password"
